@@ -3,7 +3,7 @@ import os
 
 SUPPORTED_TYPE="application/pdf"
 
-def exctract_text_from_pdf(file_path: bytes)->str:
+def exctract_text_from_pdf(file_path: str)->str:
     """Extract raw text from a PDF file , page by page"""
 
     doc = fitz.open(file_path)
