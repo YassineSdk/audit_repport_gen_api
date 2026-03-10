@@ -17,6 +17,3 @@ def exctract_text_from_pdf(file_path: str)->str:
         raise ValueError("No text could be extrated from this doc ")
 
     return "\n\n".join(collection)
-
-text = exctract_text_from_pdf("audit_report.pdf")
-print(text)
